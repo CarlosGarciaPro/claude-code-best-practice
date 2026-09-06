@@ -953,11 +953,6 @@ No priority action items — report is fully in sync with official documentation
 |---|----------|------|--------|--------|
 | 1 | MED | Changed Description | Update `/permissions` — add Auto mode tab detail (view or edit classifier rules and review recent auto mode denials), added v2.1.246 | ✅ COMPLETE (description updated at #13 in Config tag) |
 | 2 | MED | Changed Description | Update `/skills` — keybinding changed: `Space` **or** `Enter` cycles visibility; `Esc` saves and closes (was `Space` to cycle, `Enter` to save) | ✅ COMPLETE (description updated at #50 in Extensions tag) |
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> ad442ccbc1f35a8abd3cbac0c541b1e208e190b4
 
 ---
 
@@ -1013,3 +1008,41 @@ No priority action items — report is fully in sync with official documentation
 ## [2026-09-03 11:16 AM PKT] Claude Code v2.1.259
 
 No priority action items — report is fully in sync with official documentation (20 frontmatter fields, 92 built-in commands).
+
+---
+
+## [2026-09-04 11:07 AM PKT] Claude Code v2.1.260
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Changed Description | Update `/desktop` — docs now specify "Requires macOS **or x64 Windows** and a **Claude subscription**" (added architecture constraint and subscription requirement) | ✅ COMPLETE (description updated at #66 in Remote tag) |
+| 2 | MED | Changed Argument | Update `/review` — argument hint updated from `[PR]` to full `/code-review`-matching signature `[low\|medium\|high\|xhigh\|max\|ultra] [--fix] [--comment] [pr#\|branch\|path]`; description extended with reuse-last-level note | ✅ COMPLETE (command column and description updated at #61 in Project tag) |
+| 3 | MED | Changed Description | Update `/ultrareview [PR or branch]` — docs now include "Pass a PR reference to review that pull request, or a branch name to change the comparison base." | ✅ COMPLETE (description updated at #64 in Project tag) |
+| 4 | LOW | Changed Description | `/diff` — v2.1.260 changelog adds new fullscreen inline diff panel behavior; `/diff` now toggles it. Official docs table not yet updated | ✋ ON HOLD (changelog-only — defer until official docs catch up) |
+| 5 | LOW | Changed Description | `/advisor` — v2.1.260 changelog adds text form (`/advisor`, `/advisor <model>`, `/advisor off`) for desktop app, Remote Control, and headless `-p`/SDK sessions. Official docs table not yet updated | ✋ ON HOLD (changelog-only — defer until official docs catch up) |
+| 6 | LOW | Changed Description | `/cost` — v2.1.260 changelog adds likely-cause display for prompt-cache misses. Official docs table not yet updated | ✋ ON HOLD (changelog-only — defer until official docs catch up) |
+| 7 | LOW | Changed Description | `/reload-plugins` — v2.1.260 changelog notes headless session availability. Official docs table not yet updated | ✋ ON HOLD (changelog-only — defer until official docs catch up) |
+| 8 | LOW | Changed Description | `/effort` — v2.1.252 saving-as-default detail and v2.1.257 `s` key for session-only effort not yet in official docs table | ✋ ON HOLD (recurring from 2026-09-01/02 — official docs still do not include either detail; defer to next run) |
+
+---
+
+## [2026-09-05 11:11 AM PKT] Claude Code v2.1.261
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Command | Add `/skill-doctor` to Extensions tag — Show which loaded skills go unused and what each costs in context, so you can prune them; count updated 92 → 93 (v2.1.261) | ✅ COMPLETE (added as #50 in Extensions tag; downstream rows 51–93 renumbered) |
+| 2 | MED | Changed Description | Update `/diff` — official docs now read "Review the changes in your working tree, including the edits Claude has made so far" (v2.1.260, resolves ON HOLD from 2026-09-04) | ✅ COMPLETE (description updated at #60 in Project tag) |
+| 3 | LOW | Changed Description | `/advisor` — v2.1.260 changelog adds text form for desktop app, Remote Control, and headless sessions; official docs table not yet updated | ✋ ON HOLD (recurring from 2026-09-04 — official docs still do not include this detail) |
+| 4 | LOW | Changed Description | `/cost` — v2.1.260 changelog adds likely-cause display for prompt-cache misses; official docs table not yet updated | ✋ ON HOLD (recurring from 2026-09-04 — official docs still do not include this detail) |
+| 5 | LOW | Changed Description | `/reload-plugins` — v2.1.260 changelog notes headless session availability; official docs table not yet updated | ✋ ON HOLD (recurring from 2026-09-04 — official docs still do not include this detail) |
+| 6 | LOW | Changed Description | `/effort` — v2.1.252 saving-as-default detail and v2.1.257 `s` key for session-only effort not yet in official docs table | ✋ ON HOLD (recurring from 2026-09-01/02/04 — official docs still do not include either detail) |
+
+---
+
+## [2026-09-06 11:10 AM PKT] Claude Code v2.1.263
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | LOW | Changed Description | Update `/skill-doctor` — official docs now state "Requires Claude Code v2.1.252 or later and feature-flag fetching" rather than v2.1.261; corrects the version requirement and adds the feature-flag caveat | ✅ COMPLETE (requirement updated at #50 in Extensions tag) |
+
+_No frontmatter or command drift (20 frontmatter fields, 93 built-in commands still in sync). Version badge bumped v2.1.261 → v2.1.263._
